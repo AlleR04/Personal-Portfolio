@@ -1,0 +1,191 @@
+html{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.navigation-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.email-card{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(84, 84, 229);
+    z-index: 1200;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.links a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: white;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(84, 84, 229);
+    transition: all .3s ease;
+}
+
+
+.links a:hover::after{
+    width: 70%;
+
+}
+
+.boton-hire, .boton-unir{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: rgb(221, 212, 212);
+    background-color: rgb(84, 84, 229);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.boton-unir:hover{
+    opacity: .8;
+    color: white;
+}
+
+.boton-hire:hover{
+    background-color: rgb(19, 19, 118);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 5px blue;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .contenido h4{
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+header .contenido h1{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+
+}
+
+header .contenido h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+
+}
+
+header .contenido p{
+    margin-bottom: 2rem;
+    color: rgb(173, 173, 173);
+
+}
+
+header .imagen{
+    position: relative;
+
+}
+
+header .imagen::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: blue;
+    opacity: .2;
+    z-index: -100;
+}
+
+header .imagen img{
+    max-width: 600px;
+    margin: auto;
+
+}
+
+
+
+
+
+
+

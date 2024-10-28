@@ -1,0 +1,216 @@
+section .header{
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.prestaciones{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+}
+
+.prestaciones .cards{
+    background-color: rgb(47, 47, 47);
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all .3s ease;
+
+}
+
+.prestaciones .cards:hover{
+    background-color: darkblue;
+    border-color: white;
+}
+
+.prestaciones .cards span{
+    display: inline-block;
+    background-color: darkblue;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.prestaciones .cards h4{
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.prestaciones .cards p{
+    color: rgb(223, 203, 203);
+    margin-bottom: 1rem;
+}
+
+.prestaciones .cards a{
+    color: white;
+    transition: all .3s ease;
+}
+
+.prestaciones .cards a:hover{
+    color: rgb(60, 215, 9);
+}
+
+.subtitulo{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: white;
+
+}
+
+.precios-div{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.precios-div .cards{
+    padding: 3rem 2rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition:  all .3s ease ;
+}
+
+.precios-div .cards:hover{
+    background-color: rgb(76, 79, 79);
+    color: white;
+    border-color: white;
+    border: 1px solid white;
+
+}
+
+.precios-div .cards .contenido{
+    flex: 1;
+}
+
+.precios-div .cards h4{
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.precios-div .cards h3{
+    color: white;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed white;    
+}
+
+.precios-div .cards p{
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.precios-div .cards p i{
+    color: gray;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+
+}
+
+.precios-div .cards button{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.precios-div .cards button:hover{
+    background-color: rgb(86, 86, 212);
+    border-color:  rgb(86, 86, 212);
+    
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column p{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+footer .column .redes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+footer .column .redes a{
+    color: white;
+    
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition:  all 0.3s ease;
+
+}
+
+footer .column .redes a:hover{
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+footer .column h4{
+    color: white;
+    margin-bottom:  2rem;
+    font-size: 1.2rem;
+    
+    
+
+}
+
+footer .column > a{
+    display: block;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column >a:hover{
+    color: blue;
+
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    pad: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+
+}
+
+.porfile-picture{
+    width: 300px;
+    border-radius: 12px;
+}

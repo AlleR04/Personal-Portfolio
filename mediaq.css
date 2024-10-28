@@ -1,0 +1,51 @@
+@media(width < 900px){
+    .nav-links{
+        display: none;
+    }
+
+    header{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    header .imagen{
+        grid-area: 1/1/2/2;
+    }
+
+    .prestaciones{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .precios-div{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media(width < 600px) {
+    header .imagen::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    
+    .precios-div{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    footer{
+        grid-template-columns: 1fr 500px;
+    }
+
+
+    
+}
